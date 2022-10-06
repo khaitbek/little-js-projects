@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Mini Projects</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="./script/app.js" defer></script>
+</head>
+<body>
+    <!-- currency converter -->
+    <div class="container">
+        <h2 class="text-center">Currency converter</h2>
+        <form class="form-primary py-5" id="primaryForm">
+            <div class="d-flex items-center  gap-3 justify-content-between mb-5">
+                <input class="form-control form-control-sm" name="user_budget" id="userBudget" type="number" required>
+                <select class="form-select" id="userSelect" name="user_select" required>
+                    <option value="11025">USD</option>
+                    <option value="1549">YUAN</option>
+                    <option value="182">RUBL</option>
+                    <option value="10815">EURO</option>
+                </select>
+                <input class="form-control bg-black text-white" id="currencyResult" value="00" disabled name="" type="text">
+            </div>
+
+            <button class="btn btn-success d-block mx-auto" type="submit">Convert</button>
+        </form>
+    </div>
+    <!-- currency converter end -->
+
+    <!-- random number -->
+    <div class="container">
+        <h2 class="text-center"> Find Random Number</h2>
+        <form class="mb-3" id="randomForm">
+            <div class="input-group">
+                <input class="form-control" name="userRandomNumber" id="randomNumber" type="number" placeholder="find the random number" required>
+                <button class="btn btn-success" id="randomBtn">Check</button>
+            </div>
+        </form>
+        <p class="text-danger" id="num_of_games" >6 tries left</p>
+        <div class="num-range px-5 py-3 fw-bold text-center text-bg-success rounded-3" id="randomResult">0-100</div>
+    </div>
+    <!-- random number end -->
+</body>
+</html>
